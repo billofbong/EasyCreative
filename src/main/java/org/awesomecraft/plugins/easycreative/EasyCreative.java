@@ -81,6 +81,30 @@ public class EasyCreative extends JavaPlugin {
                  return true;
             }
         });
+        getCommand("gm").setExecutor(new CommandExecutor() {
+
+            public boolean onCommand(CommandSender cs, Command cmnd, String alias, String[] args) {
+                if(args.length > 0) {
+                    return false;
+                }
+                if(cs instanceof Player) {
+                    Player player = (Player)cs;
+                    if(player.getGameMode() == GameMode.CREATIVE) {
+                        player.setGameMode(GameMode.SURVIVAL);
+                    }
+                    if(player.getGameMode() == GameMode.SURVIVAL) {
+                        player.setGameMode(GameMode.CREATIVE);
+                    }
+                }
+                 else{
+                     System.out.println("You must be ingame to use this.");
+                 }               
+                
+                
+                
+                return true;
+            }
+        });
 
         System.out.println(this + " is now enabled!");
     }

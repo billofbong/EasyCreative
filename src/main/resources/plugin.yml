@@ -19,3 +19,6 @@ commands:
   gmhelp:
     description: Gives the user help.
     usage: /<command>
+  gm:
+    description: Toggles gamemode.
+    usage: /<command>
