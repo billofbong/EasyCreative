@@ -1,0 +1,21 @@
+author: billofbong
+database: false
+description: "\r\n"
+generator: http://dinnerbone.com/minecraft/tools/pluginator/
+main: org.awesomecraft.plugins.easycreative.EasyCreative
+name: Easy Creative
+startup: postworld
+url: http://awesomecraft.org/
+version: '1.0'
+commands:
+  gms:
+    description: Puts the user in survival.
+    usage: /<command>
+    aliases: [gamemodesurvival, survival]
+  gmc:
+    description: Puts the user in creative.
+    usage: /<command>
+    aliases: [gamemodecreative, creative]
+  gmhelp:
+    description: Gives the user help.
+    usage: /<command>
