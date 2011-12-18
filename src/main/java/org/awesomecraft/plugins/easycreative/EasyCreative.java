@@ -67,16 +67,12 @@ public class EasyCreative extends JavaPlugin {
             public boolean onCommand(CommandSender cs, Command cmnd, String alias, String[] args) {
                  if(args.length > 0) {
                      return false;
-                 }
-                 if(cs instanceof Player) {              
+                 }             
                  cs.sendMessage(ChatColor.GREEN + "/gmc: sets you in creative.");
                  cs.sendMessage(ChatColor.GREEN + "Aliases: gamemodecreative, creative");
                  cs.sendMessage(ChatColor.GREEN + "/gms: sets you in survival.");
                  cs.sendMessage(ChatColor.GREEN + "Aliases: gamemodesurvival, survival");
-                 }
-                 else{
-                     System.out.println("You must be ingame to use this.");
-                 }
+                 
                  
                  return true;
             }
